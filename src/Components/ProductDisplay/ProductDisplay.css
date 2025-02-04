@@ -1,0 +1,141 @@
+.productdisplay {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px auto;
+    max-width: 1200px;
+    gap: 50px;
+}
+
+/* Left section with images */
+.productdisplay-left {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.productdisplay-img-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.productdisplay-img-list img {
+    width: 100px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.productdisplay-img-list img:hover {
+    transform: scale(1.05);
+}
+
+.productdisplay-main-img {
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Right section with product details */
+.productdisplay-right {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.productdisplay-right h1 {
+    color: #333;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.productdisplay-right-stars {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #ff9800;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.productdisplay-right-prices {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.productdisplay-right-price-old {
+    color: #888;
+    text-decoration: line-through;
+}
+
+.productdisplay-right-price-new {
+    color: #ff4141;
+    font-size: 26px;
+}
+
+/* Size selection */
+.productdisplay-right-size h1 {
+    margin-top: 40px;
+    color: #555;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.productdisplay-right-sizes {
+    display: flex;
+    margin: 20px 0;
+    gap: 15px;
+}
+
+.productdisplay-right-sizes div {
+    padding: 15px 20px;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.productdisplay-right-sizes div:hover {
+    background: #eee;
+}
+
+/* Add to cart button */
+.productdisplay-right button {
+    padding: 18px 40px;
+    width: 220px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background: #ff4141;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.productdisplay-right button:hover {
+    background: #e63838;
+}
+
+/* Category */
+.productdisplay-right-category {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.productdisplay-right-category span {
+    font-weight: 600;
+    color: #333;
+}
